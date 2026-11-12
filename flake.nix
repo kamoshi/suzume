@@ -106,7 +106,7 @@
               };
 
               serviceConfig = {
-                ExecStart = "${self.packages.${pkgs.system}.default}/bin/suzume";
+                ExecStart = "${self.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/suzume";
 
                 DynamicUser = true;
                 StateDirectory = "suzume";
