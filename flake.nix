@@ -102,7 +102,7 @@
               environment = {
                 SPRING_PROFILES_ACTIVE = "prod";
                 SERVER_ADDRESS = cfg.address;
-                SERVER_PORT = cfg.port;
+                SERVER_PORT = toString cfg.port;
               };
 
               serviceConfig = {
